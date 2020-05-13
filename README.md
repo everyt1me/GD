@@ -7,7 +7,7 @@
 `git branch`
 
 ## Переключитись в інший бранч
-`git chechkout <branchname>`
+`git chechkout <branchname>`  
 Приклад:
 `git checkout master`
 `git checkout ui`
