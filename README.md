@@ -3,7 +3,7 @@
 ## Клонувати собі репозиторій, для роботи з ним
 `git clone https://github.com/RivneITStep/great-decision.git`
 
-## Список бранчів
+## Список бренчів
 `git branch`
 
 ## Переключитись в інший бренч
