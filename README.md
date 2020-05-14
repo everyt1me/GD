@@ -12,7 +12,7 @@
 `git checkout master`  
 `git checkout ui`  
 
-## Зберегти зміни і надіслати зміни в бранч
+## Зберегти зміни і надіслати зміни в бренч
 `git add .` #додали всі змінені файли в індекс  
 `git commit -m "message"` #додали коміт  
 `git push origin <branch_name>` #закинули на гітхаб  
