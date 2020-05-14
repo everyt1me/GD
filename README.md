@@ -6,7 +6,7 @@
 ## Список бранчів
 `git branch`
 
-## Переключитись в інший бранч
+## Переключитись в інший бренч
 `git chechkout <branchname>`  
 Приклад:  
 `git checkout master`  
