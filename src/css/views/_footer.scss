@@ -1,11 +1,28 @@
 footer{
     .container-fluid:nth-child(1){
-        background-color: #363636; // TODO: fixme
+        background-color: #363636; // TODO: change to variables
+        @include font(15px, $font-regular, white, normal); // TODO: change to variables
     }
-    .row:nth-child(2){
-        
+    .container-fluid:nth-child(2){
+        background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../img/footer.jpg); // TODO: change to variables
+        background-repeat: no-repeat;
+        // background-size: cover;
+        // background-size: contain;
+        background-size: 100% auto;
+        height: 318px;
+        background-position: center center;
+
+        header{
+            // @include font(25px, );
+            color: white;
+            .yellow{
+                color: rgba(243,212,61,255);
+            }
+        }
+        main{}
     }
-    .row:nth-child(3){
-        
+    .container-fluid:nth-child(3){
+        background-color: #363636; // TODO: change to variables
+        @include font(18px, $font-sfui, white, normal);
     }
 }
