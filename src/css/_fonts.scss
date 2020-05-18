@@ -35,6 +35,15 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/proximanova/ProximaNova-Light.eot');
+	src: url('../fonts/proximanova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/proximanova/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/proximanova/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
     font-family: 'SF UI Text';
     src: url('SFUIText-Regular.eot');
     src: url('../fonts/sfui/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
@@ -45,9 +54,10 @@
     font-weight: normal;
     font-style: normal;
 }
-$font-regular: 'Proxima Nova Regular';
-$font-semibold: 'Proxima Nova Semibold';
-$font-black: 'Proxima Nova Black';
-$font-bold: 'Proxima Nova Bold';
+$font-proximanova-ligth: 'Proxima Nova Light';
+$font-proximanova-regular: 'Proxima Nova Regular';
+$font-proximanova-semibold: 'Proxima Nova Semibold';
+$font-proximanova-black: 'Proxima Nova Black';
+$font-proximanova-bold: 'Proxima Nova Bold';
 $font-sfui: 'SF UI Text';
 
