@@ -8,7 +8,7 @@
         @include font(20px, $font-semibold, $btn--color-primary_2--hover, 100);
     }
     .top--header__numbers{
-        @include font(20px, src/css/views/_top-header.scss, $btn--color-primary_2--hover, 600);
+        @include font(20px, $font-semibold, $btn--color-primary_2--hover, 600);
         text-decoration: none;
     }
     .top--header_butons{
