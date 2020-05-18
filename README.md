@@ -16,3 +16,6 @@
 `git add .` #додали всі змінені файли в індекс  
 `git commit -m "message"` #додали коміт  
 `git push origin <branch_name>` #закинули на гітхаб  
+
+## Макет  
+https://drive.google.com/drive/folders/1lnY7ZjBvLwW1pqbCI53ikQUWk4LeQ6sD
