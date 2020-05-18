@@ -20,14 +20,14 @@
     background-color: #f3d43d;
     box-sizing: border-box;
       
-    h1,p {
+    span,p {
         display: inline-block;
         color: #4e4751;
     }
     p{
         font-size: 17px;        
     }   
-    h1{           
+    span{           
         font-size: 20px;                           
     }  
     .logo{
@@ -36,7 +36,7 @@
             position: absolute;
             top: 3px;
         }
-        h1{
+        span{
             position: absolute;
             left: 70px;
             top:5px
@@ -76,14 +76,15 @@
 
 .header_2_part_4{     
     padding-top: 25px;
-    h1{
+    .name_1{
         margin-left: 35px;
         margin-bottom: 35px;
         font-size: 40px;
         color: #4e4751;
         text-shadow: 0px 2px 5px rgba(0,0,0,0.5); 
+        
         span{
-            color: #f3d43d;
+            color: #f3d43d;           
         }
     }
     p{
