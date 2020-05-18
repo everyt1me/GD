@@ -1,0 +1,107 @@
+.choice_of_housing{
+    margin-top: 100px;
+    text-align: center;
+        h1{
+            color: #4c4450;
+            font-size: 45px;
+        }
+        span{
+            color: #face34;
+        }
+        p{
+            line-height: 25px;
+        }
+    }
+
+.housing{
+    text-align: center;
+        .yellow{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #fac920;
+            box-shadow: 0px 5px 6px rgba(0,0,0,0.8);
+            margin-left: 50px;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            margin-top: 30px;
+        }
+        button{
+            margin-top: 40px;
+            height: 40px;
+            width: 145px;
+            background-color:#f3d43d;
+            border:1px #f3d43d solid;
+            border-radius: 20px;
+            font-size: 17px;
+            color: #4e4751;
+            cursor: pointer;
+        }
+}
+
+.choice{
+    margin-top: 100px;
+    position: relative;
+    .photo{
+        img{
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+            right: 120px;
+        }
+        
+    }
+    .border{
+        position: absolute;
+        z-index: -1;
+        right: 80px;
+        width: 360px;
+        height: 485px;
+        border: #fac920 solid 15px;
+    }
+    h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #4c4450;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    span{
+        color: #face34;
+    }
+    select{
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 30px;
+        padding-left: 30px;
+        color: #9c989e;
+    }
+    .gray_btn{
+        background-color: #5a5757;
+        height: 40px;
+        width: 145px;
+        border: 1px #5a5757 solid;
+        border-radius: 20px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    .yellow_btn{
+        height: 40px;
+        width: 145px;
+        background-color:#f3d43d;
+        border:1px #f3d43d solid;
+        border-radius: 20px;
+        font-size: 18px;
+        color: #4e4751;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+}
