@@ -1,7 +1,7 @@
 footer{
     .container-fluid:nth-child(1){
         background-color: #363636; // TODO: change to variables
-        @include font(15px, $font-regular, white, normal); // TODO: change to variables
+        @include font(15px, $font-proxima-regular, white, normal); // TODO: change to variables
     }
     .container-fluid:nth-child(2){
         background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../img/footer.jpg); // TODO: change to variables
@@ -13,7 +13,7 @@ footer{
         background-position: center center;
 
         header{
-            // @include font(25px, );
+            @include font(25px, $font-proxima-light, white, normal); // TODO: change to variables
             color: white;
             .yellow{
                 color: rgba(243,212,61,255);
