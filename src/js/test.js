@@ -1,1 +1,1 @@
-// alert("Hello World1232");
+// console.log("Hello World1232");

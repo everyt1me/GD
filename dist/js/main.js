@@ -1,2 +1,3 @@
+//= test
 
-//# sourceMappingURL=main.js.map
+console.log("Main js works");
