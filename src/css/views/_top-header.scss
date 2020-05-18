@@ -5,10 +5,10 @@
         padding: 20px 0;
     }
     .top--header_toll{
-        @include font(20px, $font-semibold, $btn--color-primary_2--hover, 100);
+        @include font(20px, $font-proximanova-semibold, $btn--color-primary_2--hover, 100);
     }
     .top--header__numbers{
-        @include font(20px, $font-semibold, $btn--color-primary_2--hover, 600);
+        @include font(20px, $font-proximanova-semibold, $btn--color-primary_2--hover, 600);
         text-decoration: none;
     }
     .top--header_butons{
