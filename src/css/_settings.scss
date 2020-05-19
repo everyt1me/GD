@@ -13,30 +13,30 @@ li {
 
 // Заголовки
 h1 {
-  @include fonts(40px, "Proxima Nova Black", $font-h1--color-primary, 600);
+  @include font(40px, $font-proximanova-black, $font-h1--color-primary, 600);
 }
 h2 {
-  @include fonts(35px, "Proxima Nova Bold", $font-h1--color-primary, 400);
+  @include font(35px, $font-proximanova-bold, $font-h1--color-primary, 400);
 }
 h3 {
-  @include fonts(27px, "Proxima Nova Semibold", $font-h3--color-primary, 400);
+  @include font(27px, $font-proximanova-semibold, $font-h3--color-primary, 400);
 }
 
 // Параграфи
 .main-text {
-  @include fonts(15px, "Proxima Nova Regular", $font-text--color-primary, 400);
+  @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
   line-height: 24px;
 }
 
 .text-title {
-  @include fonts(15px, "SF UI Text", $font-text--color-primary, 400);
+  @include font(15px, $font-sfui, $font-text--color-primary, 400);
   line-height: 24px;
 }
 
 // Списки
 .list-check {
   list-style-image: url(img/check.png);
-  @include fonts(15px, "Proxima Nova Regular", $font-text--color-primary, 400);
+  @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
   line-height: 36px;
 }
 // Інпути
@@ -44,7 +44,7 @@ input {
   background-color: $default--color__1;
   border: $default--color__2 solid 1px;
   width: 100%;
-  @include fonts(15px, "Proxima Nova Regular", $font-text--color-primary, 400);
+  @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
   padding: 15px;
   height: 45px;
   border-radius: 30px;
@@ -53,7 +53,7 @@ input:active {
   background-color: $default--color__1;
   border: $btn--bg-color-primary_1 solid 1px;
   width: 100%;
-  @include fonts(15px, "Proxima Nova Regular", $font-text--color-primary, 400);
+  @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
   padding: 15px;
   height: 45px;
   border-radius: 30px;
@@ -62,7 +62,7 @@ input:hover {
   background-color: bg-main--color-primary_2;
   border: $btn--bg-color-primary_1 solid 1px;
   width: 100%;
-  @include fonts(15px, "Proxima Nova Regular", $font-text--color-primary, 400);
+  @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
   padding: 15px;
   height: 45px;
   border-radius: 30px;
@@ -71,29 +71,28 @@ input:hover {
 // Лінки
 .menu{
     a{
-        @include fonts(18px, "SF UI Text", $font-text--color-primary, 400);
+        @include font(18px, $font-sfui, $font-text--color-primary, 400);
     }
     a:hover{
-        @include fonts(18px, "SF UI Text", $font-text--color-primary, 400);
+        @include font(18px, $font-sfui, $font-text--color-primary, 400);
         background-color: $btn--bg-color-primary_2--hover;
     }
 }
 
 .menu-footer{
     a{
-        @include fonts(18px, "SF UI Text", $default--color__1, 400);
+        @include font(18px, $font-sfui, $default--color__1, 400);
     }
     a:hover{
-        @include fonts(18px, "SF UI Text", $font-span--color-primary, 400);
+        @include font(18px, $font-sfui, $font-span--color-primary, 400);
     }
 }
 
 .link-footer{
     a{
-        @include fonts(14px, "Proxima Nova Regular", $font-text-footer--color-primary_3, 400);
+        @include font(14px, $font-proximanova-regular, $font-text-footer--color-primary_3, 400);
     }
     a:hover{
-        @include fonts(14px, "Proxima Nova Regular", $font-span--color-primary, 400);
+        @include font(14px, $font-proximanova-regular, $font-span--color-primary, 400);
     }
 }
-
