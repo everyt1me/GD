@@ -1,33 +1,32 @@
 footer{
     .container-fluid:nth-child(1){
-        background-color: #363636; // TODO: change to variables
-        @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to variables
-        box-shadow: black 0 0 5px;
+        background-color: #363636; // TODO: change to variables // бек верхньої полоски (Квартири, ...)
+        @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to variables // текст верхньої полоски (Квартири, ...)
+        box-shadow: black 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
     }
     .container-fluid:nth-child(2){
-        background-image: linear-gradient(rgba(54,54,54,.92), rgba(54,54,54,.92)), url(../img/footer.jpg); // TODO: change to variables
+        // TODO: change to variables // колір затемнення зображення (всередині футера)
+        background-image: linear-gradient(rgba(54,54,54,.92), rgba(54,54,54,.92)), url(../img/footer.jpg);
         background-repeat: no-repeat;
         background-size: 100% auto;
         height: 318px;
         background-position: center center;
-
         header{
-            @include font(25px, $font-proximanova-light, white, normal); // TODO: change to variables
-            color: white; // TODO: change to variables
+            @include font(25px, $font-proximanova-light, white, normal); // TODO: change to variables // колір слова Lorem в заголовку, в середній зоні
             .yellow{
-                color: rgba(243,212,61,255); // TODO: change to variables
+                color: rgba(243,212,61,255); // TODO: change to variables // колір слова Ipsum в заголовку, в середній зоні
             }
         }
         main{
-            @include font(14px, $font-proximanova-regular, rgba(196,196,195,255), auto); // TODO: change to variables
+            @include font(14px, $font-proximanova-regular, rgba(196,196,195,255), auto); // TODO: change to variables // колір тексту статті в середній зоні
         }
     }
     .container-fluid:nth-child(3){
-        background-color: #363636; // TODO: change to variables
-        @include font(18px, $font-sfui, white, normal); // TODO: change to variables
-        box-shadow: black 0 0 5px;
+        background-color: #363636; // TODO: change to variables // бек нижньої полоски (Головна, Про нас, ...)
+        @include font(18px, $font-sfui, white, normal); // TODO: change to variables // текст нижньої полоски (Головна, Про нас, ...)
+        box-shadow: black 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
     }
