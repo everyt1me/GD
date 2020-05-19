@@ -1,32 +1,31 @@
 footer{
     .container-fluid:nth-child(1){
-        background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек верхньої полоски (Квартири, ...)
-        @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to $font-text-footer--color-primary_1 // текст верхньої полоски (Квартири, ...)
-        box-shadow: rgba(0,0,0,.7) 0 0 5px; // колір тіні // $default--color__4
+        background-color: $bg-footer--color-primary_1;
+        @include font(15px, $font-proximanova-regular, $font-text-footer--color-primary_1, normal);
+        box-shadow: $default--color__4 0 0 5px;
         position: relative;
         z-index: 1;
     }
     .container-fluid:nth-child(2){
-        // TODO: change to $default--color__3 // колір затемнення зображення (всередині футера)
-        background-image: linear-gradient(rgba(54,54,54,.92), rgba(54,54,54,.92)), url(../img/footer.jpg);
+        background-image: linear-gradient($default--color__3, $default--color__3), url(../img/footer.jpg);
         background-repeat: no-repeat;
         background-size: 100% auto;
         height: 318px;
         background-position: center center;
         header{
-            @include font(25px, $font-proximanova-light, white, normal); // TODO: change to $font-text-footer--color-primary_1 // колір слова Lorem в заголовку, в середній зоні
+            @include font(25px, $font-proximanova-light, $font-text-footer--color-primary_1, normal);
             .yellow{
-                color: #f3d43d; // TODO: change to $font-text-footer--color-primary_2 // колір слова Ipsum в заголовку, в середній зоні
+                color: $font-text-footer--color-primary_2;
             }
         }
         main{
-            @include font(14px, $font-proximanova-regular, #c4c4c3, auto); // TODO: change to $font-text-footer--color-primary_3 // колір тексту статті в середній зоні
+            @include font(14px, $font-proximanova-regular, $font-text-footer--color-primary_3, auto);
         }
     }
     .container-fluid:nth-child(3){
-        background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек нижньої полоски (Головна, Про нас, ...)
-        @include font(18px, $font-sfui, white, normal); // TODO: change to $font-text-footer--color-primary_1 // текст нижньої полоски (Головна, Про нас, ...)
-        box-shadow: rgba(0,0,0,.7) 0 0 5px; // колір тіні // $default--color__4
+        background-color: $bg-footer--color-primary_1;
+        @include font(18px, $font-sfui, $font-text-footer--color-primary_1, normal);
+        box-shadow: $default--color__4 0 0 5px;
         position: relative;
         z-index: 1;
     }
