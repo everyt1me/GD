@@ -1,8 +1,8 @@
 .test{
-    background-color: $btn--color-primary_1;
-    color: $font--color-primary_1;
+    background-color: $bg-footer--color-primary_1;
+    color: $bg-footer--color-primary_1;
     &:hover{
-        background-color: $btn--color-primary_1--hover;
+        background-color: $bg-footer--color-primary_1;
         cursor: pointer;
     }
 }
