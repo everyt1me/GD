@@ -1,7 +1,7 @@
 footer{
     .container-fluid:nth-child(1){
         background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек верхньої полоски (Квартири, ...)
-        @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to variables // текст верхньої полоски (Квартири, ...)
+        @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to $standart--color__1 // текст верхньої полоски (Квартири, ...)
         box-shadow: black 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
@@ -14,7 +14,7 @@ footer{
         height: 318px;
         background-position: center center;
         header{
-            @include font(25px, $font-proximanova-light, white, normal); // TODO: change to variables // колір слова Lorem в заголовку, в середній зоні
+            @include font(25px, $font-proximanova-light, white, normal); // TODO: change to $standart--color__1 // колір слова Lorem в заголовку, в середній зоні
             .yellow{
                 color: #f3d43d; // TODO: change to variables // колір слова Ipsum в заголовку, в середній зоні
                 // значення співпадає з іншими змінними, але треба окрема змінна яка в назві буде відображати суть
@@ -26,7 +26,7 @@ footer{
     }
     .container-fluid:nth-child(3){
         background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек нижньої полоски (Головна, Про нас, ...)
-        @include font(18px, $font-sfui, white, normal); // TODO: change to variables // текст нижньої полоски (Головна, Про нас, ...)
+        @include font(18px, $font-sfui, white, normal); // TODO: change to $standart--color__1 // текст нижньої полоски (Головна, Про нас, ...)
         box-shadow: black 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
