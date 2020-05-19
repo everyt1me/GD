@@ -16,11 +16,11 @@ footer{
         header{
             @include font(25px, $font-proximanova-light, white, normal); // TODO: change to variables // колір слова Lorem в заголовку, в середній зоні
             .yellow{
-                color: rgba(243,212,61,255); // TODO: change to variables // колір слова Ipsum в заголовку, в середній зоні
+                color: #f3d43d; // TODO: change to variables // колір слова Ipsum в заголовку, в середній зоні
             }
         }
         main{
-            @include font(14px, $font-proximanova-regular, rgba(196,196,195,255), auto); // TODO: change to variables // колір тексту статті в середній зоні
+            @include font(14px, $font-proximanova-regular, #c4c4c3, auto); // TODO: change to variables // колір тексту статті в середній зоні
         }
     }
     .container-fluid:nth-child(3){
