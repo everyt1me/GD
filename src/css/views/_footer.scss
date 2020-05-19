@@ -2,7 +2,7 @@ footer{
     .container-fluid:nth-child(1){
         background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек верхньої полоски (Квартири, ...)
         @include font(15px, $font-proximanova-regular, white, normal); // TODO: change to $standart--color__1 // текст верхньої полоски (Квартири, ...)
-        box-shadow: black 0 0 5px; // колір тіні
+        box-shadow: rgba(0,0,0,.7) 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
     }
@@ -27,7 +27,7 @@ footer{
     .container-fluid:nth-child(3){
         background-color: #363636; // TODO: change to $bg-footer--color-primary_2 // бек нижньої полоски (Головна, Про нас, ...)
         @include font(18px, $font-sfui, white, normal); // TODO: change to $standart--color__1 // текст нижньої полоски (Головна, Про нас, ...)
-        box-shadow: black 0 0 5px; // колір тіні
+        box-shadow: rgba(0,0,0,.7) 0 0 5px; // колір тіні
         position: relative;
         z-index: 1;
     }
