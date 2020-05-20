@@ -1,11 +1,11 @@
 .btn--forward {
   width: 166px;
   height: 49px;
-  @include button(18px, $font-proximanova-semibold, $btn--color-primary_1, $btn--color-primary_2, 400);
+  @include button(18px, $font-proximanova-semibold, $btn--color-primary_1, $btn--bg-color-primary_1, 400);
   line-height: 18px;
   letter-spacing: 1.1px;
   border-radius: 30px;
-  border: 2px solid $btn--color-primary_2;
+  border: 2px solid $btn--bg-color-primary_1;
 }
 
 .btn--forward:hover {
@@ -21,11 +21,11 @@
 .btn--we_offer {
   width: 255px;
   height: 39px;
-  @include button(18px, $font-proximanova-semibold, $btn--color-primary_1, $btn--color-primary_1, 400);
+  @include button(18px, $font-proximanova-semibold, $btn--color-primary_1, $btn--bg-color-primary_1, 400);
   line-height: 18px;
   letter-spacing: 1.1px;
   border-radius: 30px;
-  border: 2px solid $btn--color-primary_1;
+  border: 2px solid $btn--bg-color-primary_1;
 }
 
 .btn--we_offer:hover {
