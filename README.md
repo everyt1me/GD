@@ -8,9 +8,13 @@
 
 ## Переключитись в іншу гілку (branch)
 `git chechkout <branchname>`  
-Приклад:  
-`git checkout master`  
-`git checkout ui`  
+
+## Створити собі гілку для роботи  
+`git checkout <основна гілка>`  
+`git pull`  
+`git branch <своя нова гілка>`  
+`git checkout <своя нова гілка>`  
+`git push` #створюєм гілку на гітхаб  
 
 ## Зберегти зміни і надіслати зміни в гілку 
 `git add .` #додали всі змінені файли в індекс  
