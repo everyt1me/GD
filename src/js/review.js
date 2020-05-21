@@ -1,12 +1,12 @@
-let caro = document.getElementById('carousel')
-let left_btn = document.getElementById('carou_left')
-let right_btn = document.getElementById('carou_right')
-let text_p = document.querySelectorAll('.text_rew')
-let root = document.getElementById('root')
-let index = 0
-let text_slide = [];
+var caro = document.getElementById('carousel')
+var left_btn = document.getElementById('carou_left')
+var right_btn = document.getElementById('carou_right')
+var text_p = document.querySelectorAll('.text_rew')
+var root = document.getElementById('root')
+var index = 0
+var text_slide = [];
 
-for (let i = 0; i < text_p.length; i ++){
+for (var i = 0; i < text_p.length; i ++){
     text_slide[i] = text_p[i];
 }
 
