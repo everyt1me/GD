@@ -1,5 +1,13 @@
-h2 {
-    text-transform: uppercase;
+.review {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+    }
+    button {
+        margin: 10px auto;
+    }
 }
 .text_div:nth-child(2) {
     display: inline-block;
@@ -46,8 +54,6 @@ h2 {
     position: absolute;
     top: 40px;
     right: 10px;
-}
-#carou_right {
     cursor: pointer;
 }
 #root span {
@@ -63,11 +69,4 @@ h2 {
 #carousel {
     display: block;
     position: relative;
-}
-.review {
-    margin-top: 80px;
-    text-align: center;
-}
-button {
-    margin: 10px auto;
 }
