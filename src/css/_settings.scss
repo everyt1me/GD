@@ -14,12 +14,17 @@ li {
 // Заголовки
 h1 {
   @include font(40px, $font-proximanova-black, $font-h1--color-primary, 600);
+  text-transform: uppercase;
 }
 h2 {
   @include font(35px, $font-proximanova-bold, $font-h1--color-primary, 400);
 }
 h3 {
   @include font(27px, $font-proximanova-semibold, $font-h3--color-primary, 400);
+}
+// Жовтий текст в заголовках
+.yellow{
+  color: $font-span--color-primary;
 }
 
 // Параграфи
@@ -36,9 +41,11 @@ h3 {
 
 // Списки
 .list-check {
-  list-style-image: url(img/check.png);
+  list-style-image: url('/img/check.png');
   @include font(15px, $font-proximanova-regular, $font-text--color-primary, 400);
-  line-height: 36px;
+  li{
+    margin-bottom: 12px;
+  }
 }
 // Інпути
 input {
