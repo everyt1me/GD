@@ -1,8 +1,160 @@
-.test{
-    background-color: $btn--color-primary_1;
-    color: $font-h1--color-primary;
-    &:hover{
-        background-color: $btn--color-primary_2--hover;
+main {
+    h1{
+        text-transform: uppercase;
+    }
+    .main-fluid h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .main-fluid h3 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .main-fluid h4 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
         cursor: pointer;
+    }
+    span {
+        color: $font-span--color-primary;
+    }
+    .choice_of_housing {
+        margin-top: 100px;
+        text-align: center;
+        }
+    .main_smart {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px;
+        margin: 0;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .main_smart_div {
+        width: 100%;
+        height: 200px;
+    }
+    .housing {
+        text-align: center;
+            .yellow {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: $font-span--color-primary;
+                box-shadow: 0px 5px 6px rgba(0,0,0,0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h4 {
+                margin-top: 50px;
+                font-size: 25px;
+            }
+            button {
+                margin-top: 100px;
+            }
+    }
+    .choice {
+        margin-top: 100px;
+        position: relative;
+        .photo {
+            img {
+                z-index: 1;
+                position: absolute;
+                top: 40px;
+                right: 120px;
+            }
+        }
+        .border {
+            position: absolute;
+            z-index: -1;
+            right: 80px;
+            width: 360px;
+            height: 485px;
+            border: $font-span--color-primary solid 15px;
+        }
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        select {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 30px;
+            padding-left: 30px;
+            color: $default--color__2;
+        }
+        .select_div div{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 5px;
+            margin-top: 30px;
+        }
+        .btn--show_all, .btn--forward {
+            margin-top: 50px;
+            margin-left: 70px;
+        }
+    }
+    .main-fluid img {
+        display: block;
+        margin: 0 auto;
+    }
+    .lightgrey {
+        background-color: $bg-main--color-primary_2;
+        padding: 25px 0px 0px 0px;
+        height: 700px;
+    }
+    .advantages {
+        margin-top: 180px;
+    }
+    .advantages_list .row:nth-child(2){
+        margin-top: 50px;
+    }
+    .advantages_list {
+        padding: 25px;
+        margin-top: 50px;
+        button {
+            margin: 70px auto;
+        }
+    }
+    .house_level {
+        padding: 15px;
+    }
+    .house_level h3 {
+        color: $font-text--color-primary;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .house_level img {
+        width: 285px;
+        height: 219px;
+        margin-top: 10px;
+    }
+    .house_level button {
+        margin-top: 40px;
+    }
+    #standart, #luxory, #premium {
+        display: block;
+        cursor: pointer;
+        width: 370px;
+        height: 375px;
+        padding: 0px;
+        margin: 0 5px;
+        background-color: $bg-main--color-primary_1;
+        border-radius: 5%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    #standart:hover, #luxory:hover, #premium:hover{
+        width: 390px;
+        height: 395px;
+        margin: -10px 0px 0px 0px;
+        z-index: 1;
+        button{
+            margin-top: 60px
+        }
     }
 }
