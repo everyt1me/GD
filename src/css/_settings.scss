@@ -70,13 +70,16 @@ input:hover {
 
 // Лінки
 .menu{
-    a{
-        @include font(18px, $font-sfui, $font-text--color-primary, 400);
-    }
-    a:hover{
-        @include font(18px, $font-sfui, $font-text--color-primary, 400);
-        background-color: $btn--bg-color-primary_2--hover;
-    }
+  a{
+      @include font(18px, $font-sfui, $font-text--color-primary, 400);
+      padding: 9px 20px 8px 20px;
+  }
+  a:hover{
+      @include font(18px, $font-sfui, $font-text-footer--color-primary_1, 400);
+      background-color: $btn--bg-color-primary_2--hover;
+      padding: 9px 20px 8px 20px;
+
+  }
 }
 
 .menu-footer{
@@ -96,3 +99,13 @@ input:hover {
         @include font(14px, $font-proximanova-regular, $font-span--color-primary, 400);
     }
 }
+
+//Логін
+.login{
+  a{
+  @include font(17px, $font-proximanova-semibold, $font-text--color-primary, normal);
+  }
+  a:hover{
+  @include font(17px, $font-proximanova-bold, $font-text--color-primary, normal);
+  }
+  }
