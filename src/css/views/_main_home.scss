@@ -135,13 +135,13 @@ main {
         margin-top: 10px;
     }
     .house_level button {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     #standart, #luxory, #premium {
         display: block;
         cursor: pointer;
         width: 370px;
-        height: 375px;
+        height: 355px;
         padding: 0px;
         margin: 0 5px;
         background-color: $bg-main--color-primary_1;
@@ -150,11 +150,11 @@ main {
     }
     #standart:hover, #luxory:hover, #premium:hover{
         width: 390px;
-        height: 395px;
+        height: 375px;
         margin: -10px 0px 0px 0px;
         z-index: 1;
         button{
-            margin-top: 60px
+            margin-top: 40px
         }
     }
 }
