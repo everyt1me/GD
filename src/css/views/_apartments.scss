@@ -1,0 +1,74 @@
+.flat--bcg {
+  background-color: $bg-main--color-primary_2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border: 1px solid #f8f8f8;
+  margin-bottom: 30px;
+}
+
+.upper {
+  padding: 55px 20px 40px 20px;
+}
+
+.info {
+  padding-top: 50px;
+}
+
+.title {
+  @include font(15px, $font-proximanova-bold, $font-h1--color-primary, 400);
+}
+
+.name {
+  @include font(15px, $font-proximanova-regular, $font-h1--color-primary, 400);
+  margin-left: 10px;
+}
+
+h5 {
+  @include font(24px, $font-sfui, $font-h1--color-primary, 400);
+  padding-bottom: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.space {
+  height: 40px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+
+  li{
+    background-color: $default--color__1;
+    border: 1px solid #dadada;
+    margin: 5px;
+    padding: 7px 22px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.3);
+ 
+    a{
+        @include font(15px, $font-proximanova-bold, $font-h1--color-primary, 400);
+        text-decoration: none;
+    }
+    a:hover{
+        @include font(15px, $font-proximanova-bold, $font-h1--color-primary, 400);
+        text-decoration: none;
+    }
+    } 
+    li:hover{
+        background-color: $btn--bg-color-primary_1;
+        border: 1px solid #dadada;
+        margin: 5px;
+        padding: 7px 22px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.3);
+  }
+}
