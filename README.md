@@ -1,5 +1,6 @@
 ### Django project create  
-`git checkout --orphan Server`  
+`git branch Server`  
+`git checkout Server`  
 `git rm -fr .`  
 `rm -fr dist`  
 `rm -fr node_modules`  
