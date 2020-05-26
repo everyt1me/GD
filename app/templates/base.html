@@ -11,7 +11,12 @@
 </head>
 
 <body>
+    {% if header_h1 %} <!-- якщо така змінна існує (не головна сторінка) - виводим внутрішній хедер  -->
+    {% include 'partials/_header_internal.html' %}
+    {% else %}
     {% include 'partials/_header.html' %}
+    {% endif %}
+
     {% block content %} {% endblock %}
     {% include 'partials/_review.html' %}
     {% include 'partials/_footer.html' %}
