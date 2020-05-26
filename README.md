@@ -6,7 +6,7 @@
 `wget https://raw.githubusercontent.com/jpadilla/django-project-template/master/.gitignore`  
   
 `python3.8 -m venv env`  
-`source env/bin/activate` #this is for Linux (MAC?)  
+activate environment (Linux: `source env/bin/activate`)  
 `pip install django`  
 `pip install psycopg2` #posgresql connector  
 `pip freeze >requirements.txt`  
@@ -32,7 +32,7 @@ change file app/settings.py:
 `git checkout Server`  
 `git pull`  
 `python3.8 -m venv env`  
-`source env/bin/activate` #this is for Linux (MAC?)  
+activate environment (Linux: `source env/bin/activate`)  
 `pip install -r requirements.txt`  
 `cd app`  
 `python manage.py runserver`  
