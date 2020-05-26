@@ -1,9 +1,7 @@
 ### Django project create  
 `git branch Server`  
 `git checkout Server`  
-`git rm -fr .`  
-`rm -fr dist`  
-`rm -fr node_modules`  
+`git rm -fr *`  
 `wget https://raw.githubusercontent.com/jpadilla/django-project-template/master/.gitignore`  
   
 `python3.8 -m venv env`  
