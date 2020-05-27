@@ -26,7 +26,7 @@ change file app/settings.py:
 `python manage.py createsuperuser`  
 `python manage.py runserver`  
   
-
+---
 ### Django project run
 `git checkout Server`  
 `git pull`  
@@ -38,3 +38,42 @@ activate environment (Linux: `source env/bin/activate`)
 
 http://127.0.0.1:8000/  
   
+---
+### Інструкція по додаванню сторінки  
+
+#### 1. Файл pages/ulrs.py  
+додаємо свій елемент в urlpatterns  
+
+
+#### 2. Файл pages/views.py  
+додаємо фукцію з назвою яку щойно вказали в `pages/ulrs.py`  
+не забуваєм додати в data свої дані:  
++ header_h1 - верхній напис в хедері  
++ header_p - нижній  напис в хедері  
+
+#### 3.
+вставляємо файл сторінки в templates/pages  
+формат:
+```
+{% extends 'base.html' %}
+{% block content %}
+верстка
+{% endblock %}
+```  
+#### 3.a 
+у верстці міняємо урли  по шаблону:
+```html
+<img src="{{ STATIC_PREFIX }}img/guarantee/guarantee.jpg" alt="">
+```
+
+#### 4
+Додаємо урли на свою додану сторінку в файли:  
++ templates/partials/_header.html
++ templates/partials/_header_internal.html
++ templates/partials/_footer.html
+
+#### Робота над помилками
+Якщо не грузить якусь картинку, або не та верстка.  
++ Перевірте чи правильний урл до картинки. Чи не забули {{ STATIC_PREFIX }}. Якщо url в css - потрібно пофіксити url в css (додати '/static').  
++ Перевірте чи існує така картинка в app/static/img. Якщо ні - потрібно додати саму картинку.  
++ Якщо не підтягується верстка, нема таких класів як в збірці - потрібно оновити css файл. Взяти зі збірки, з папки dist, main.css і main.css.map, і покласти в static/css  

@@ -8,6 +8,12 @@ def index(request):
 
 
 def about(request):
-    data = {"header_h1": "КВАРТИРИ <span>ДЛЯ ВАС</span>",
-            "header_p": "Головна >> Квартири для Вас"}
+    data = {"header_h1": "Про <span>Нас</span>",
+            "header_p": "Головна >> Про нас"}
     return render(request, 'pages/about.html', context=data)
+
+
+def guarantee(request):
+    data = {"header_h1": "НАШІ <span>ГАРАНТІЇ</span>",
+            "header_p": "Головна >> Гарантії"}
+    return render(request, 'pages/guarantee.html', context=data)
