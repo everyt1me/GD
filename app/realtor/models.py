@@ -10,5 +10,7 @@ class Realtor(models.Model):
     city = models.CharField(max_length=100, blank=False)
     mvr = models.BooleanField(default=False)
     hire_date = models.DateTimeField(default=datetime.now)
-    birth_date = models.DateTimeField(default)
+    birth_date = models.DateTimeField(auto_now=False, auto_now_add=False)
 
+    def __str__(self):
+        return self.name
