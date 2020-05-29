@@ -17,3 +17,9 @@ def guarantee(request):
     data = {"header_h1": "НАШІ <span>ГАРАНТІЇ</span>",
             "header_p": "Головна >> Гарантії"}
     return render(request, 'pages/guarantee.html', context=data)
+
+
+def discounts(request):
+    data = {"header_h1": "Знижки",
+            "header_p": "Головна >> Знижки"}
+    return render(request, 'pages/discounts.html', context=data)
