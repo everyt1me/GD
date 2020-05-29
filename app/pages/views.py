@@ -17,6 +17,7 @@ def guarantee(request):
             "header_p": "Головна >> Гарантії"}
     return render(request, 'pages/guarantee.html', context=data)
 
+
 def apartment(request):
     data = {"header_h1": "Крартири",
             "header_p": "Головна >> Квартири"}
@@ -33,3 +34,8 @@ def testimonials(request):
             "header_p": "Головна >> Відгуки"}
     return render(request, 'pages/testimonials.html', context=data)
     
+
+def discounts(request):
+    data = {"header_h1": "Знижки",
+            "header_p": "Головна >> Знижки"}
+    return render(request, 'pages/discounts.html', context=data)
