@@ -25,12 +25,6 @@ def discounts(request):
     return render(request, 'pages/discounts.html', context=data)
 
 
-def apartment(request):
-    data = {"header_h1": "Крартири",
-            "header_p": "Головна >> Квартири"}
-    return render(request, 'pages/apartment.html', context=data)
-
-
 def contact_us(request):
     data = {"header_h1": "Контакти",
             "header_p": "Головна >> Контакти"}
