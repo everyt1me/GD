@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+# Create your views here.
 
 
 def index(request):
@@ -18,7 +19,12 @@ def guarantee(request):
     return render(request, 'pages/guarantee.html', context=data)
 
 
-<<<<<<< HEAD
+def discounts(request):
+    data = {"header_h1": "Знижки",
+            "header_p": "Головна >> Знижки"}
+    return render(request, 'pages/discounts.html', context=data)
+
+
 def contact_us(request):
     data = {"header_h1": "Контакти",
             "header_p": "Головна >> Контакти"}
@@ -30,9 +36,3 @@ def testimonials(request):
             "header_p": "Головна >> Відгуки"}
     return render(request, 'pages/testimonials.html', context=data)
     
-=======
-def discounts(request):
-    data = {"header_h1": "Знижки",
-            "header_p": "Головна >> Знижки"}
-    return render(request, 'pages/discounts.html', context=data)
->>>>>>> Server
