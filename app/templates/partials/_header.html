@@ -37,15 +37,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12  menu">
-                        <a href="/index.html">Головна</a>
-                        <a href="/about.html">Про нас</a>
-                        <a href="/guarantee.html">Гарантії</a>
+                        <a {% if request.path == "/" %} class="active" {% endif %} href="{% url 'index' %}">Головна</a>
+                        <a href="/about">Про нас</a>
+                        <a href="/guarantee">Гарантії</a>
                         <a href="">Що пропонуємо</a>
                         <a href="">Замовити</a>
                         <a href="">Ціни</a>
-                        <a href="/testimonials.html">Відгуки</a>
-                        <a href="/discounts.html">Знижки</a>
-                        <a href="/contact_us.html">Контакти</a>
+                        <a href="/testimonials">Відгуки</a>
+                        <a href="/discounts">Знижки</a>
+                        <a href="/contact_us">Контакти</a>
                     </div>
                 </div>
             </div>
