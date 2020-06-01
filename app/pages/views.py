@@ -20,7 +20,7 @@ def guarantee(request):
 
 
 def apartment(request):
-    data = {"header_h1": "Крартири",
+    data = {"header_h1": "Квартири",
             "header_p": "Головна >> Квартири"}
     return render(request, 'pages/apartment.html', context=data)
 
