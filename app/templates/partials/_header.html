@@ -1,18 +1,19 @@
 {% load static %}
 <header>
-{% comment %} {{ header_h1 }} {% endcomment %}
+{% if not header_h1 %} 
     <div class="container-fluid header">
-
+{% else %}
+    <div class="container-fluid header_2">
+{% endif %}
         <div class="header_part_1">
         </div>
-
         <div class="header_part_2">
             <div class="container">
                 <div class="row">
                     <div class="col-5 logo">
                         <a href="index.html">
                             <img src="{% static 'img/Logo.png' %}" alt="Logo">
-                            <span>GREAT <br> DECISION</span>
+                            <span>GREAT<br>DECISION</span>
                         </a>
                     </div>
                     <div class="col-7 contact">
@@ -49,8 +50,7 @@
                 </div>
             </div>
         </div>
-
-
+{% if not header_h1 %}
         <div class="header_part_4">
             <div class="container">
                 <div class="row">
@@ -69,6 +69,21 @@
                 </div>
             </div>
         </div>
-
+{% else %}
+        <div class="header_2_part_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>
+                            {{ header_h1|safe }}
+                        </h1>
+                        <p>
+                            {{ header_p|safe }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endif %}
     </div>
 </header>
