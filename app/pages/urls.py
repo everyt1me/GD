@@ -10,4 +10,5 @@ urlpatterns = [
     path('contact_us.html', views.contact_us, name="contact_us"),
     path('testimonials.html', views.testimonials, name="testimonials"),
     path('apartment.html', views.apartment, name="apartment"),
+    path('we_offer.html', views.we_offer, name="we_offer"),
 ]
