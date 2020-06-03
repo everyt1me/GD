@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
     'realtor',
+    'apartments',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +84,13 @@ DATABASES = {
         'PASSWORD': 'gd_user-1',
         'HOST': '194.44.93.225'
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'postgres',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'postgres',
+    #     'HOST': 'localhost',
+    # }
 }
 
 
@@ -126,5 +134,5 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'app/static')
+    os.path.join(BASE_DIR, 'app/static'),
 ]
