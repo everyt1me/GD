@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<section>
-    <section class="apartments">
+
+<section class="apartments">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -11,36 +11,41 @@
             </div>
             {% if apartments %}
                 {% for apartment in apartments %}
-                Photo: 
-                <img src="{{ apartment.photo_0.url }}">
-                <br>
-                City: {{ apartment.city }}
-                <br>
-                Площа: {{apartment.square_all}}
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="col-lg-6 col-sm-12">
+                    <img src="{{ apartment.photo_0.url }}">
+                </div>
+                <div class="offset-lg-1 col-lg-5 col-sm-12 info">
+                    <h5>{{ apartment.title }}</h5>
+                    <div class="flat--bcg">
+                        <div>
+                            <p><span class="title">Місто:</span><span class="name">{{ apartment.city }}</span></p>
+                            <p><span class="title">Площа:</span><span class="name">{{ apartment.square_all }}<sup>2</sup></span></p>
+                        </div>
+                        <div>
+                            <p><span class="title">Тип житла:</span><span class="name">{{ apartment.apartment_type }}</span></p>
+                            <p><span class="title">Ціна:</span><span class="name">{{ apartment.price }}</span></p>
+                        </div>
+                    </div>
+                <div class="btn"><button class="btn--forward">Більше>></button></div>
+                <div class="col-12 space"></div>
                 {% endfor %}
             {% else %}
-            <div>нічого не знайдено</div>
+            <div>Нічого не знайдено</div>
             {% endif %}
             
             <div class="col-12 space"></div>
-      
-                    
 
-                <div class="col-12">
-                <nav aria-label="Page navigation example ">
-                    <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
-                </div>
+            <div class="col-12">
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+            </div>
 
         </div>
     </div>  
