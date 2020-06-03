@@ -1,7 +1,8 @@
 from django.db import models
 from realtor.models import Realtor
 from datetime import datetime
-
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class Apartments(models.Model):
     realtor = models.ForeignKey(
