@@ -9,7 +9,9 @@
                     Вибір власного житла- це один з найважливіших рішень у житті людини. Це не дивно, адже від вибору житла залежатиме комфорт і затишок проживання в певному середовищі кожної людини.<br>Саме тому перед придбанням нової квартири, потрібно обов'язково ретельно підійти до цього питання, щоб не помилитися і зробити максимально правильний вибір квартири для свого подальшого життя.
                 </p>
             </div>
+        </div>
             {% if apartments %}
+            <div class="row">
                 {% for apartment in apartments %}
                 <div class="col-lg-6 col-sm-12">
                     <img src="{{ apartment.photo_0.url }}">
@@ -19,16 +21,18 @@
                     <div class="flat--bcg">
                         <div>
                             <p><span class="title">Місто:</span><span class="name">{{ apartment.city }}</span></p>
-                            <p><span class="title">Площа:</span><span class="name">{{ apartment.square_all }}<sup>2</sup></span></p>
+                            <p><span class="title">Площа:</span><span class="name">{{ apartment.square_all }} м<sup>2</sup></span></p>
                         </div>
                         <div>
                             <p><span class="title">Тип житла:</span><span class="name">{{ apartment.apartment_type }}</span></p>
                             <p><span class="title">Ціна:</span><span class="name">{{ apartment.price }}</span></p>
                         </div>
                     </div>
+                </div>
                 <div class="btn"><button class="btn--forward">Більше>></button></div>
                 <div class="col-12 space"></div>
                 {% endfor %}
+            </div>
             {% else %}
             <div>Нічого не знайдено</div>
             {% endif %}
