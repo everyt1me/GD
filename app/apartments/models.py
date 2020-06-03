@@ -4,6 +4,7 @@ from datetime import datetime
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 class Apartments(models.Model):
     realtor = models.ForeignKey(
         Realtor, on_delete=models.DO_NOTHING, blank=True, null=True)
@@ -13,10 +14,11 @@ class Apartments(models.Model):
     region = models.CharField(max_length=250, blank=True)
     description = models.TextField(blank=True)
     price = models.IntegerField()
-    rooms = models.IntegerField(blank=True)
-    square_live = models.DecimalField(max_digits=5, decimal_places=1, blank=True)
+    rooms = models.IntegerField(blank=True, null=True)
+    square_live = models.DecimalField(
+        max_digits=5, decimal_places=1, blank=True, null=True)
     square_all = models.DecimalField(max_digits=5, decimal_places=1)
-    floor = models.IntegerField(blank=True)
+    floor = models.IntegerField(blank=True, null=True)
     apartment_type = models.CharField(max_length=250)
     is_published = models.BooleanField(default=True)
     list_date = models.DateTimeField(default=datetime.now)
