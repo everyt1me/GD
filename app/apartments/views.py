@@ -12,13 +12,17 @@ def index(request):
     page = paginator.get_page(page_number)
     
     context = {
-        "apartments": page
+        "apartments": page,
+        "header_h1": "",
+        "header_p": "",
     }
     return render(request, "pages/apartments.html", context)
 
 def apartment(request, apartment_id):
     apartment = get_object_or_404(Apartments, pk=apartment_id)
     context = {
-        "apartment": apartment
+        "apartment": apartment,
+        "header_h1": "",
+        "header_p": "",
     }
     return render(request, 'pages/apartment.html', context)

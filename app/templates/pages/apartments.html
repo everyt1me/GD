@@ -31,6 +31,7 @@
                 </div>
                 <div class="btn"><button class="btn--forward"><a
                             href="{% url 'apartment' apartment.id  %}">Більше>></a></button>
+                </div>
                 <div class="col-12 space"></div>
                 {% endfor %}
             </div>
@@ -44,7 +45,7 @@
                 <nav aria-label="Page navigation example">
                     <ul class="step-links pagination">
                         {% comment %} {% if apartments.has_previous %} {% endcomment %}
-                        <li class='page-item'><a class='page-link' href="?page=1">&laquo; first</a></li>
+                        {% comment %} <li class='page-item'><a class='page-link' href="?page=1">&laquo; first</a></li> {% endcomment %}
                         <li class='page-item'><a class='page-link' {% if apartments.has_previous %}href="?page={{ apartments.previous_page_number }}"{% else %}href="#"{% endif %}>previous</a></li>
                         {% comment %} {% endif %} {% endcomment %}
     
@@ -63,7 +64,7 @@
     
                         {% comment %} {% if apartments.has_next %} {% endcomment %}
                         <li class='page-item'><a class='page-link' {% if apartments.has_next %}href="?page={{ apartments.next_page_number }}"{% else %}href="#"{% endif %}>next</a></li>
-                        <li class='page-item'><a class='page-link' href="?page={{ apartments.paginator.num_pages }}">last &raquo;</a></li>
+                        {% comment %} <li class='page-item'><a class='page-link' href="?page={{ apartments.paginator.num_pages }}">last &raquo;</a></li> {% endcomment %}
                         {% comment %} {% endif %} {% endcomment %}
                     </ul>
                 </nav>
