@@ -52,3 +52,9 @@ def order(request):
     data = {"header_h1": "Замовити",
             "header_p": "Головна >> Замовити"}
     return render(request, 'pages/order.html', context=data)
+
+
+def prices(request):
+    data = {"header_h1": "Ціни",
+            "header_p": "Головна >> Ціни"}
+    return render(request, 'pages/prices.html', context=data)
