@@ -42,7 +42,13 @@ def testimonials(request):
             "header_p": "Головна >> Відгуки"}
     return render(request, 'pages/testimonials.html', context=data)
 
+  
+def we_offer(request):
+    data = {"header_h1": "ЩО <span>ПРОПОНУЄМО</span>",
+            "header_p": "Головна >> Що пропонуємо"}
+    return render(request, 'pages/we_offer.html', context=data)
 
+  
 def order(request):
     data = {"header_h1": "Замовити",
             "header_p": "Головна >> Замовити"}
