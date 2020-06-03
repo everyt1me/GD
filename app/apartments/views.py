@@ -27,4 +27,4 @@ def apartment(request, apartment_id):
         "header_h1": "Квартири <span>для вас</span>",
         "header_p": "Головна >> Квартири для вас",
     }
-    return render(request, 'pages/apartment.html', context)
+    return render(request, "pages/apartment.html", context)
