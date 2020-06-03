@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <section class="apartments">
     <div class="container">
         <div class="row">
@@ -38,50 +37,22 @@
             {% else %}
             <div>Нічого не знайдено</div>
             {% endif %}
-            
             <div class="col-12 space"></div>
-
             <div class="pagination col-12">
                 <nav aria-label="Page navigation example">
                     <ul class="step-links pagination">
-                        {% comment %} {% if apartments.has_previous %} {% endcomment %}
-                        {% comment %} <li class='page-item'><a class='page-link' href="?page=1">&laquo; first</a></li> {% endcomment %}
                         <li class='page-item'><a class='page-link' {% if apartments.has_previous %}href="?page={{ apartments.previous_page_number }}"{% else %}href="#"{% endif %}>previous</a></li>
-                        {% comment %} {% endif %} {% endcomment %}
-    
-                        {% comment %} <span class="current"> {% endcomment %}
-                            {% comment %} <li>Page {{ apartments.number }} of {{ apartments.paginator.num_pages }}.</li> {% endcomment %}
-                        {% comment %} </span> {% endcomment %}
                         {% for i in apartments.paginator.page_range %}
-                        
                         {% if i == apartments.number %}
                         <li class='page-item'><a style="color:red;" class='page-link' href="?page={{i}}">{{i}}</a></li>
                         {% else %}
                         <li class='page-item'><a class='page-link' href="?page={{i}}">{{i}}</a></li>
                         {% endif %}
-
                         {% endfor %}                       
-    
-                        {% comment %} {% if apartments.has_next %} {% endcomment %}
                         <li class='page-item'><a class='page-link' {% if apartments.has_next %}href="?page={{ apartments.next_page_number }}"{% else %}href="#"{% endif %}>next</a></li>
-                        {% comment %} <li class='page-item'><a class='page-link' href="?page={{ apartments.paginator.num_pages }}">last &raquo;</a></li> {% endcomment %}
-                        {% comment %} {% endif %} {% endcomment %}
                     </ul>
                 </nav>
             </div>
-
-            {% comment %} <div class="col-12">
-            <nav aria-label="Page navigation example ">
-                <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
-            </div> {% endcomment %}
-
         </div>
     </div>  
 </section>
