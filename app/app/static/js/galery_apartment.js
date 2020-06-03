@@ -27,7 +27,6 @@ function lft() {
     if (pos == 0) {
     } else {
       pos += 150;
-      console.log()
       slike.style.marginLeft = pos + 'px';
       slike.style.transition = 'all 1s';
     }
