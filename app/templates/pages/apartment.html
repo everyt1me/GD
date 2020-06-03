@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <section class="select_apartment">
     <div class="container">
         <div class="row">
@@ -20,15 +19,12 @@
             <div class="hidden">
                 <div class="slike">
                     <img src="{{ apartment.photo_0.url }}" width="100%" alt="" class="small-slike">
+                    {% if apartment.photo_1 %}
                     <img src="{{ apartment.photo_1.url }}" width="100%" alt="" class="small-slike">
+                    {% endif %}
+                    {% if apartment.photo_2 %}
                     <img src="{{ apartment.photo_2.url }}" width="100%" alt="" class="small-slike">
-                    {% comment %} <img src="img/apartments/first/2.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/3.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/4.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/5.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/6.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/7.jpg" width="100%" alt="" class="small-slike">
-                    <img src="img/apartments/first/8.jpg" width="100%" alt="" class="small-slike"> {% endcomment %}
+                    {% endif %}
                 </div>
             </div>
 <!-- --------------------------------------------------------- -->
@@ -59,5 +55,4 @@
         </div>
     </div>
 </section>
-
 {% endblock %}
