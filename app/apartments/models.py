@@ -1,8 +1,6 @@
 from django.db import models
 from realtor.models import Realtor
 from datetime import datetime
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class Apartments(models.Model):
@@ -19,7 +17,8 @@ class Apartments(models.Model):
         max_digits=5, decimal_places=1, blank=True, null=True)
     square_all = models.DecimalField(max_digits=5, decimal_places=1)
     floor = models.IntegerField(blank=True, null=True)
-    apartment_type = models.CharField(max_length=250)
+    apartment_type = models.ForeignKey(
+        'ApartmentType', on_delete=models.SET_NULL, null=True, blank=True, default=None)
     is_published = models.BooleanField(default=True)
     list_date = models.DateTimeField(default=datetime.now)
     photo_0 = models.ImageField(upload_to="photos/%Y/%m/%d/")
@@ -30,6 +29,17 @@ class Apartments(models.Model):
     photo_5 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
     photo_6 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
     photo_7 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'apartment'
+        verbose_name_plural = 'apartments'
+
+
+class ApartmentType(models.Model):
+    title = models.CharField(max_length=50)
 
     def __str__(self):
         return self.title
