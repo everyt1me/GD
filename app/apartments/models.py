@@ -4,8 +4,6 @@ from datetime import datetime
 
 
 class Apartments(models.Model):
-    realtor = models.ForeignKey(
-        Realtor, on_delete=models.DO_NOTHING, blank=True, null=True)
     title = models.CharField(max_length=250)
     address = models.CharField(max_length=250, blank=True)
     city = models.CharField(max_length=250, blank=True)
@@ -29,6 +27,8 @@ class Apartments(models.Model):
     photo_5 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
     photo_6 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
     photo_7 = models.ImageField(upload_to="photos/%Y/%m/%d/", blank=True)
+    realtor = models.ForeignKey(
+        Realtor, on_delete=models.DO_NOTHING, blank=True, null=True)
 
     def __str__(self):
         return self.title
