@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 def login(request):
     return render(request, 'account/login.html')
 
-
 def register(request):
     if request.method == 'POST':
         first_name = request.POST['Name']
@@ -37,12 +36,14 @@ def register(request):
             print("passwords do not match")
             return redirect('register')
 
-    return render(request, 'account/register.html')
+    data = {"header_h1": "Реєстрація",
+            "header_p": "Головна >> Реєстрація"}
+
+    return render(request, 'account/register.html', context = data)
 
 
 def logout(request):
     return render(request, 'account/logout.html')
-
 
 def dashboard(request):
     return render(request, 'account/dashboard.html')

@@ -1,0 +1,24 @@
+.register-form {
+    .container {
+        text-align: center;
+    }
+    form {
+        display: block;
+        margin: 50px auto;
+        border: $font-text--color-primary solid 2px;
+        padding: 15px;
+        div{
+            justify-content: space-between;
+            p{
+                margin-top: 24px;
+            }
+        }
+    
+    }
+    .tittle-underline{
+        width: 175px;
+    }
+    input, button {
+        margin-top: 10px;
+    }
+}
