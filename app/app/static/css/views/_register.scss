@@ -5,20 +5,26 @@
     form {
         display: block;
         margin: 50px auto;
-        border: $font-text--color-primary solid 2px;
         padding: 15px;
         div{
             justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
             p{
                 margin-top: 24px;
             }
         }
-    
-    }
-    .tittle-underline{
-        width: 175px;
     }
     input, button {
         margin-top: 10px;
+    }
+    button a {
+        text-decoration: none;
+        color: $btn--bg-color-primary_3--hover;
+    }
+    .btn--show_all:hover{
+        a{
+            color: $btn--color-primary_3--hover;
+        }
     }
 }
