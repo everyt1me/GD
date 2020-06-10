@@ -6,7 +6,7 @@
             <form action="{% url 'register' %}" method="POST" class="col-6">
                 {% csrf_token %}
                 
-                <h2>Реєстрація</h2>
+                <h2>Реєстрація <span>нового</span> користувача</h2>
                 
                 <input type="text" name="Name" placeholder="Ім'я" required="">
                 <input type="text" name="Surname" placeholder="Прізвище" required="">
@@ -17,7 +17,7 @@
                 
                 <div class="col-12 d-flex mt-4">
                     <button class="btn--forward" type="submit" value="SIGNUP">Реєстрація</button>
-                    <button class="btn--show_all" value="login"><a href ="login">Увійти</a></button>
+                    <a href ="login">Я вже зареєстрований</a>
                 </div>
             </form>
         </div>
