@@ -36,10 +36,8 @@ def register(request):
         else:
             print("passwords do not match")
             return redirect('register')
-
     data = {"header_h1": "Реєстрація",
             "header_p": "Головна >> Реєстрація"}
-
     return render(request, 'account/register.html', context=data)
 
 
