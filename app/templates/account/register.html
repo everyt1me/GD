@@ -1,43 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-<!-- main -->
-<div class="bubble">
-	<div class="main-w3layouts wrapper">
-    <h1>SignUp</h1>
-    <div class="main-agileinfo">
-        <div class="agileits-top">
-            <form action="{% url 'register' %}" method="POST">
-				{% csrf_token %}
-                <input class="text" type="text" name="Name" placeholder="Name" required="">
-                <input class="text" type="text" name="Surname" placeholder="Surname" required="">
-                <input class="text" type="text" name="Username" placeholder="Username" required="">
-                <input class="text email" type="email" name="email" placeholder="Email" required="">
-                <input class="text" type="password" name="password" placeholder="Password" required="">
-                <input class="text w3lpass" type="password" name="confirm-password" placeholder="Confirm Password" required="">
-                <input type="submit" value="SIGNUP">
+<main>
+    <div class="register-form d-block col-12">
+        <div class="container">
+            <form action="{% url 'register' %}" method="POST" class="col-6">
+                {% csrf_token %}
+                <h2>Створення <span>нового</span> користувача</h2>
+                <input type="text" name="Name" placeholder="Ім'я" required="">
+                <input type="text" name="Surname" placeholder="Прізвище" required="">
+                <input type="text" name="Username" placeholder="Логін" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Пароль" required="">
+                <input type="password" name="confirm-password" placeholder="Підтвердіть пароль" required="">
+                <div class="col-12 d-flex mt-4">
+                    <button class="btn--forward" type="submit" value="SIGNUP">Реєстрація</button>
+                    <a href ="login">Я вже зареєстрований</a>
+                </div>
             </form>
-            <p>Don't have an Account? <a href="#"> Login Now!</a></p>
         </div>
     </div>
-    <!-- copyright -->
-    <div class="colorlibcopy-agile">
-        <p>© 2020 Signup Form. All rights reserved | Design by me"
-            target="_blank">GD</a></p>
-    </div>
-    <!-- //copyright -->
-    <ul class="colorlib-bubbles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-	</div>
-</div>
-
+</main>
 {% endblock %}
