@@ -5,19 +5,16 @@
         <div class="container">
             <form action="{% url 'register' %}" method="POST" class="col-6">
                 {% csrf_token %}
-                
-                <h2>Реєстрація</h2>
-                
+                <h2>Створення нового користувача</h2>
                 <input type="text" name="Name" placeholder="Ім'я" required="">
                 <input type="text" name="Surname" placeholder="Прізвище" required="">
                 <input type="text" name="Username" placeholder="Логін" required="">
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="password" name="password" placeholder="Пароль" required="">
                 <input type="password" name="confirm-password" placeholder="Підтвердіть пароль" required="">
-                
-                <div class="col-12 d-flex mt-4">
-                    <button class="btn--forward" type="submit" value="SIGNUP">Реєстрація</button>
-                    <button class="btn--show_all" value="login"><a href ="login">Увійти</a></button>
+                <div class="container login mt-4 d-flex justify-content-between">
+                    <button class="btn--forward col-auto" type="submit" value="SIGNUP">Реєстрація</button>
+                    <a href="/account/login" class="col-auto align-self-center">Вхід для зареєстрованих</a>
                 </div>
             </form>
         </div>
