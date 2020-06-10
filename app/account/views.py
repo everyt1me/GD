@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
 
 
 def login(request):
-    return render(request, 'account/login.html')
+    data = {"header_h1": "Вхід",
+            "header_p": "Головна >> Вхід"}
+    return render(request, 'account/login.html', context=data)
 
 
 def register(request):
