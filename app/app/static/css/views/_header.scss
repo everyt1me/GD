@@ -71,7 +71,13 @@
     .menu{
         display: flex;
         justify-content: space-between;
-        }         
+        a:first-child{
+            margin-left: -15px;
+        }
+        a:last-child{
+            margin-right: -15px;
+        }
+    }
 }
 
 .header_part_4{    
