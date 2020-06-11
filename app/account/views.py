@@ -1,10 +1,22 @@
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+# from django.contrib.auth import authenticate, login
 
 
 def login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            print('User logged in')
+            return redirect('dashboard')
+        else:
+            print("Incorrect login or password")
+            return redirect('login')
+    #request.method == GET
     data = {"header_h1": "Вхід",
             "header_p": "Головна >> Вхід"}
     return render(request, 'account/login.html', context=data)
@@ -45,7 +57,10 @@ def register(request):
 
 
 def logout(request):
-    return render(request, 'account/logout.html')
+    if request.method == "POST":
+        auth.logout(request)
+        print("Logged out")
+    return redirect('index')
 
 
 def dashboard(request):

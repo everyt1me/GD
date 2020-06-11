@@ -28,3 +28,20 @@ def apartment(request, apartment_id):
         "header_p": "Головна >> Квартири для вас",
     }
     return render(request, "pages/apartment.html", context)
+
+
+def search(request):
+    apartments_list = Apartments.objects.order_by(
+        '-list_date').filter(is_published=True)
+    # print("list: ", apartments_list)
+    if 'city' in request.GET:
+        city = request.GET['city']
+        if city:
+            apartments_list = apartments_list.filter(city__iexact=city)
+    print("list: ", apartments_list)
+    context = {
+        "apartments_list": apartments_list,
+        "header_h1": "Пошук",
+        "header_p": "Головна >> Пошук",
+    }
+    return render(request, "pages/search.html", context)
